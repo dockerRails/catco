@@ -243,6 +243,7 @@
 
 <script setup>
 import { ref } from 'vue'
+import { useHead } from '@unhead/vue'
 
 // Meta title for SEO
 useHead({
