@@ -15,7 +15,7 @@
             <h3 class="text-h5 font-weight-bold">Cat Studio</h3>
           </div>
           <p class="text-body-2 text-grey-lighten-1 mb-4">
-            Professional web design company dedicated to creating unique digital experiences 
+            Professional web design company dedicated to creating unique digital experiences
             for our clients. We believe excellent design can change the world.
           </p>
           <div class="d-flex">
@@ -112,9 +112,14 @@
         </v-col>
         <v-col cols="12" md="6" class="text-md-right">
           <p class="text-body-2 text-grey-lighten-2 mb-0">
-            <span class="mr-4">Privacy Policy</span>
-            <span class="mr-4">Terms of Service</span>
-            <span>Site Map</span>
+            <router-link
+              to="/privacy-policy"
+              class="footer-link mr-4"
+            >
+              Privacy Policy
+            </router-link>
+            <span class="footer-link mr-4">Terms of Service</span>
+            <span class="footer-link">Site Map</span>
           </p>
         </v-col>
       </v-row>
@@ -164,6 +169,18 @@ const companyLinks = [
 
 .contact-info {
   line-height: 1.6;
+}
+
+.footer-link {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.footer-link:hover {
+  color: #667eea;
+  text-decoration: underline;
 }
 
 @media (max-width: 960px) {
